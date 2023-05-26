@@ -61,8 +61,8 @@ font-family: 'Noto Sans', sans-serif; */
 	margin-left: 50px;
 }
 .logo::after{
-    content: '';
-	border: 3px solid white;
+        content: '';
+	border: 3px solid #ffff;
 	border-radius: 100px; 
 	position: absolute;
 	margin-left: -27px;
