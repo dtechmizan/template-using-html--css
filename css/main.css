@@ -84,8 +84,8 @@ ul {
 ul li {
 	list-style: none;
 	font-size: 14px;
-	margin-left: 50px;
-	margin-top: 30px;
+	margin-left: 100px;
+	margin-top: 35px;
 }
 
 ul li a {
@@ -93,11 +93,27 @@ ul li a {
 	color: white;
 	font-family: Arial;
 	font-weight: bold;
-	transition: 1s ease-in-out;
+	padding:0 10px;
+	transition: 0.5s ease-in-out;
+	position:absolute;
+}
+ul li a::after{
+	content:'';
+	background: #ff7200;
+	width:0%;
+	height:1px;
+	position:absolute;
+	bottom:0;
+	left:8px;
+	transition: width 0.5s;
+
 }
 
-ul li a:hover {
+ul li a:hover{
 	color: #ff7200;
+}
+ul li a:hover::after {
+	width: 80%;
 }
 
 .srch {
