@@ -7,6 +7,7 @@ font-family: 'Noto Sans', sans-serif; */
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .main {
@@ -51,16 +52,22 @@ font-family: 'Noto Sans', sans-serif; */
 	border-right: none;
 	border-top: none;
 	border-color: #ff7200;
-	border-radius: 100px;
-	padding-top: 25px;
+	border-radius: 100px; 
 	border-width: 5px;
+	padding-top: 25px;
 	transition-property: all;
 	transition-duration: 1s;
 	transform: 1s ease 0s;
 	margin-left: 50px;
 }
-
-
+.logo::after{
+    content: '';
+	border: 3px solid white;
+	border-radius: 100px; 
+	position: absolute;
+	margin-left: -27px;
+	margin-top: 5px;
+}
 .logo:hover {
 	cursor: pointer;
 	transform: rotate(720deg);
@@ -177,7 +184,6 @@ ul li a:hover::after {
 	margin-top: 9%;
 	letter-spacing: 2px;
 }
-
 .content .cn {
 	width: 160px;
 	height: 35px;
@@ -206,6 +212,9 @@ ul li a:hover::after {
 
 .content span {
 	color: #ff7200;
+	
+}
+.content span:hover{
 	font-size: 60px;
 }
 
